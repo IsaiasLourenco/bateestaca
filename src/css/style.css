@@ -431,13 +431,15 @@ body {
     }
 
     .miniaturas {
-        grid-template-columns: repeat(3, 80px);
-        /* Ou 2, dependendo do layout que preferir */
-        gap: 8px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
     }
 
     .miniaturas img {
-        width: 70px;
-        height: 70px;
+        width: 100%;
+        /* usa todo o espaço da célula */
+        height: auto;
+        aspect-ratio: 1/1;
+        /* mantém quadrado */
     }
 }
