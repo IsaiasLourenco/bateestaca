@@ -42,7 +42,7 @@ body {
     color: coral;
 }
 
-.header .header-container .letra{
+.header .header-container .letra {
     font-size: 1.8rem;
 }
 
@@ -344,20 +344,20 @@ body {
 }
 
 .miniaturas {
-  display: grid;
-  grid-template-columns: repeat(5, 80px);
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .miniaturas img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: transform 0.2s ease;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
 }
 
 .miniaturas img:hover {
@@ -365,10 +365,13 @@ body {
 }
 
 .ampliada-container {
-  display: flex;
-  justify-content: center;   /* Centraliza na horizontal */
-  align-items: center;       /* Centraliza na vertical */
-  height: 100%;              /* ou defina uma altura exata */
+    display: flex;
+    justify-content: center;
+    /* Centraliza na horizontal */
+    align-items: center;
+    /* Centraliza na vertical */
+    height: 100%;
+    /* ou defina uma altura exata */
 }
 
 .ampliada-container img {
@@ -404,4 +407,37 @@ body {
 .whatsapp-link:hover {
     background-color: green;
     color: white;
+}
+
+.break-mobile {
+    display: inline;
+}
+
+@media (max-width: 430px) {
+    .whatsapp-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .break-mobile {
+        display: block;
+        margin-top: 6px;
+    }
+
+    .miniaturas {
+        grid-template-columns: repeat(3, 80px);
+        /* Ou 2, dependendo do layout que preferir */
+        gap: 8px;
+    }
+
+    .miniaturas img {
+        width: 70px;
+        height: 70px;
+    }
 }
