@@ -176,8 +176,8 @@ body {
 
 }
 
-.about .image.right {
-    background: url(../images/sobre1.jpg) center center no-repeat;
+.about .image-right {
+    background: url(../images/sobreNos.jpg) center center no-repeat;
     background-size: 90%;
 }
 
@@ -344,28 +344,31 @@ body {
 }
 
 .miniaturas {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .miniaturas img {
-    width: 80px;
-    height: auto;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: transform 0.2s ease;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
 }
 
 .miniaturas img:hover {
     transform: scale(1.05);
 }
 
-.image.right {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.ampliada-container {
+  display: flex;
+  justify-content: center;   /* Centraliza na horizontal */
+  align-items: center;       /* Centraliza na vertical */
+  height: 100%;              /* ou defina uma altura exata */
 }
 
 .ampliada-container img {
