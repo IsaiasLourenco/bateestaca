@@ -42,6 +42,10 @@ body {
     color: coral;
 }
 
+.header .header-container .letra{
+    font-size: 1.8rem;
+}
+
 /* HERO */
 .hero {
     grid-area: hero;
