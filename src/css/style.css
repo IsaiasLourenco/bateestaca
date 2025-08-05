@@ -365,20 +365,21 @@ body {
 }
 
 .ampliada-container {
-    display: flex;
-    justify-content: center;
-    /* Centraliza na horizontal */
-    align-items: center;
-    /* Centraliza na vertical */
-    height: 100%;
-    /* ou defina uma altura exata */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;      /* Garante altura mínima pra exibir bem */
+  height: 100%;           /* Pode ajustar dependendo do contexto */
 }
 
 .ampliada-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .whatsapp-top {
