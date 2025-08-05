@@ -68,6 +68,12 @@ body {
     transform: translateY(-80px);
 }
 
+@media (max-width: 768px) {
+  .hero h2 {
+    transform: translateY(-120px); /* Mais pra cima em telas pequenas */
+  }
+}
+
 .hero .scroll-arrow a {
     position: absolute;
     bottom: 25px;
