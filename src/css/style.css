@@ -68,6 +68,10 @@ body {
     transform: translateY(-80px);
 }
 
+.item h2 {
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .hero h2 {
         /* Mais pra cima em telas pequenas */
